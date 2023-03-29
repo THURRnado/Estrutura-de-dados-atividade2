@@ -27,7 +27,7 @@ public class MainListaEncadeada {
 		System.out.println("Qual o tamanho da lista? " + l.tamanho());
 		
 		//modificando um elemento da lista
-		l.insere(2, 25);
+		l.modificaElemento(2, 25);
 		System.out.print("Lista modificada: ");
 		for(int i = 1 ; i <= l.tamanho() ; i++) {	
 			System.out.print(l.elemento(i) + ", ");
