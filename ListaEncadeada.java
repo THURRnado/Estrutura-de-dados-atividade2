@@ -60,6 +60,31 @@ public int elemento(int pos) {
 	return aux.getConteudo();
 	
 }
+	
+/*
+ * verifica se a lista esta vazia, se estiver, retorna -1, caso contrario
+ * verifica se a posição é valida, se tambem não for, retorna 1, caso também não ocorra
+ * percorre a lista até achar a posição inserida, enquanto isso faz a variavel No auxiliar
+ * ir andando de No em No.
+ * Quando a posição requerida é encontrada, modifica o valor da posição encontrada pelo valor passado
+ */
+public void modificaElemento(int valor, int pos) {
+	No aux = this.cabeca;
+	int cont = 1;
+	
+	if(vazia()) return -1;
+	
+	if(pos < 1 || pos > this.tamanho) return -1;
+	
+	while(cont < pos) {
+		
+		aux = aux.getProximo();
+		cont++;
+	}
+
+	aux.setConteudo(valor);
+	
+}
 
 
 /*
