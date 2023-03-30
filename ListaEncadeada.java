@@ -62,8 +62,8 @@ public int elemento(int pos) {
 }
 	
 /*
- * verifica se a lista esta vazia, se estiver, retorna -1, caso contrario
- * verifica se a posição é valida, se tambem não for, retorna 1, caso também não ocorra
+ * verifica se a lista esta vazia, se estiver, retorna false, caso contrario
+ * verifica se a posição é valida, se tambem não for, retorna false, caso também não ocorra
  * percorre a lista até achar a posição inserida, enquanto isso faz a variavel No auxiliar
  * ir andando de No em No.
  * Quando a posição requerida é encontrada, modifica o valor da posição encontrada pelo valor passado
