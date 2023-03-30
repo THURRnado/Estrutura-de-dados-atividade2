@@ -68,13 +68,13 @@ public int elemento(int pos) {
  * ir andando de No em No.
  * Quando a posição requerida é encontrada, modifica o valor da posição encontrada pelo valor passado
  */
-public void modificaElemento(int valor, int pos) {
+public boolean modificaElemento(int valor, int pos) {
 	No aux = this.cabeca;
 	int cont = 1;
 	
-	if(vazia()) return -1;
+	if(vazia()) return false;
 	
-	if(pos < 1 || pos > this.tamanho) return -1;
+	if(pos < 1 || pos > this.tamanho) return false;
 	
 	while(cont < pos) {
 		
@@ -83,6 +83,8 @@ public void modificaElemento(int valor, int pos) {
 	}
 
 	aux.setConteudo(valor);
+
+return true;
 	
 }
 
